@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import data from "./data.js";
+import Place from "./Place";
+import Header from "./Header.js";
 
-function App() {
+export default function App() {
+  const work_data = data.map((obj) => {
+    return (
+      <div>
+        <Place
+          title={obj.title}
+          location={obj.location}
+          map_url={obj.googleMapsUrl}
+          start={obj.startDate}
+          end={obj.endDate}
+          description={obj.description}
+          image={obj.imageURL}
+          key={obj.key} //just to get rid of the key prop error
+        />
+      </div>
+    );
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      {work_data}
     </div>
   );
 }
-
-export default App;

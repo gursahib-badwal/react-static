@@ -1,0 +1,62 @@
+/* styles.css */
+.place {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.place h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.place h3 {
+  font-size: 18px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.place a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+.place a:hover {
+  text-decoration: underline;
+}
+
+.place b {
+  font-weight: bold;
+}
+
+.place p {
+  margin-bottom: 10px;
+}
+
+.place img {
+  width: 20%;
+  height: 20%;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.place img:hover {
+  transform: scale(1.1);
+}
+
+.place .title {
+  color: #333;
+  font-weight: bold;
+}
+
+.place .description {
+  color: #666;
+}
+
+.header {
+  text-align: center;
+}
